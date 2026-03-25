@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✅ BASIC SEO -->
+  <meta name="description" content="La Vue Port Shepstone – Luxury coastal accommodation with ocean views. Book your serene getaway on the KwaZulu-Natal South Coast.">
+  <meta name="keywords" content="Port Shepstone accommodation, guest house South Coast, luxury stay KZN, ocean view accommodation">
+  <meta name="author" content="La Vue Port Shepstone">
+
+  <!-- ✅ OPEN GRAPH (for WhatsApp, Facebook, etc.) --> 
+  <meta property="og:title" content="La Vue Port Shepstone">
+  <meta property="og:description" content="Where the ocean meets quiet luxury. Book your stay today.">
+  <meta property="og:image" content="./src/images/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lavue-nps.co.za/">
+
+  <!-- ✅ CANONICAL -->
+  <link rel="canonical" href="https://lavue-nps.co.za/">
 
   <!-- ✅ FIXED PATH -->
   <link rel="icon" type="image/png" href="./src/images/favicon.png">
@@ -38,6 +52,23 @@
   <style>body { box-sizing: border-box; }</style>
 
   <script src="./_sdk/data_sdk.js"></script>
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "La Vue Port Shepstone",
+      "description": "Luxury coastal accommodation in Port Shepstone with ocean views.",
+      "telephone": "+27 76 163 2064",
+      "email": "lavue.portshepstone@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Port Shepstone",
+        "addressRegion": "KwaZulu-Natal",
+        "addressCountry": "ZA"
+      }
+    }
+  </script>
 </head>
 
 <body class="h-full">
