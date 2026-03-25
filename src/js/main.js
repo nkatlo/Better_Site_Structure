@@ -198,4 +198,14 @@ function runApp() {
   // =======================
 
   if (window.lucide) lucide.createIcons();
+
+  //========================
+  // LAZY IMAGES
+  //========================
+  document.querySelectorAll('img').forEach(img => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+      img.setAttribute('decoding', 'async');
+    }
+  });
 }
